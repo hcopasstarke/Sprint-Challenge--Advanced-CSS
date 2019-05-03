@@ -160,6 +160,43 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+.home .nav-container {
+  background-color: #F6F6F6;
+  border: #F1F1F1;
+  display: inline-block;
+  width: 50%;
+  border-width: 0;
+}
+.home .navbar-header {
+  width: 50%;
+  margin: 0 auto;
+}
+.home .navbar-header ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.home .navbar-header h2 {
+  display: inline-block;
+}
+.home .navbar-header .nav-bar {
+  width: 50%;
+  margin: 0 auto;
+}
+.home .navbar-header .nav-bar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.home .navbar-header .nav-bar li {
+  display: inline;
+}
+.home .navbar-header .nav-bar li a {
+  text-decoration: none;
+  display: inline-block;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;

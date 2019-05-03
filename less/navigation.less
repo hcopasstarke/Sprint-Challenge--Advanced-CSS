@@ -1,1 +1,45 @@
 // Navigation code here
+// Variables
+@import "variables.less";
+@import "global.less";
+
+.home {
+    .nav-container {
+        background-color: @nav-bg;
+        border: @nav-border;
+        display: inline-block;
+        width: 50%;
+        border-width: 0;
+    }
+    .navbar-header {
+        width: 50%;
+        margin: 0 auto;
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        h2 {
+            display: inline-block;
+        }
+        .nav-bar {
+            width: 50%;
+            margin: 0 auto;
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                text-align: center;
+                }
+                li {
+                    display: inline;
+                    a {
+                        text-decoration: none;
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+    }
+}
