@@ -1,5 +1,38 @@
 // Mixins Here
+// Variables
 @btn-bg-color: #22283A;
 @border-real: #dee2e6;
+@phone: ~"(max-width: 500px)";
 
-@button
+// padding-top: 10px;
+// padding-bottom: 10px;
+// padding-right: 20px;
+// padding-left: 20px;
+
+.button-padding (@vert, @hor) {
+    padding-top: @vert;
+    padding-bottom: @vert;
+    padding-right: @hor;
+    padding-left: @hor;
+    }
+
+// width: 100%;
+// margin: 0 auto;
+
+.auto-container (@wid, @mar) {
+    width: @wid;
+    margin: @mar;
+}
+
+// display: flex;
+// flex-direction: row;
+
+.flex (@dis, @fdir) {
+    display: @dis;
+    flex-direction: row;
+}
+
+.inverted (@col, @bg-col) {
+    color: @col;
+    background-color: @bg-col;
+}

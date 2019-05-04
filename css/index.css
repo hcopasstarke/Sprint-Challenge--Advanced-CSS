@@ -160,59 +160,64 @@ p {
   width: 100%;
   margin: 0 auto;
 }
-.home {
-  max-width: 800px;
+.container-home {
   width: 100%;
-  margin: 0 auto;
-}
-.home .nav-container {
-  margin-top: 20px;
+  margin-top: 1.5em;
+  padding: 0.5em;
   display: inline-block;
-  width: 100%;
   background-color: #F6F6F6;
-  border: #F1F1F1;
-  border-width: 1px;
+  border: 0.1em double #F1F1F1;
 }
-.home .navbar-header {
+.container-home .nav-container {
   width: 100%;
   margin: 0 auto;
 }
-.home ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-}
-.home h2 {
-  display: inline-block;
-}
-.home .nav-bar {
+.container-home .nav-container .nav-title h2 {
   width: 100%;
   margin: 0 auto;
-}
-.home .nav-bar ul {
   display: flex;
   flex-direction: row;
+  padding: 0.5em;
   justify-content: space-evenly;
-  list-style: none;
-  padding: 0;
   text-align: center;
 }
-.home .nav-bar ul li a {
-  display: inline;
-  font-style: #454A59;
+.container-home .nav-bar {
+  width: 100%;
+  margin: 0 auto;
+}
+.container-home .nav-bar ul {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  list-style: none;
+}
+.container-home .nav-bar ul li a {
+  color: #22283B;
+  font-size: 1.6rem;
+  line-height: 1.4;
   text-decoration: none;
   text-align: center;
+  display: inline;
+  padding: 1em;
+}
+.container-home .nav-bar ul li a:hover,
+.container-home .nav-bar ul li a:focus {
+  color: #F6F6F6;
+  background-color: #22283B;
 }
 footer {
   color: #22283B;
   background: #f4f4f4;
-  padding: 20px 0;
-  border: 1px double #e0e0e0;
-  border-radius: 10px;
+  padding: 2.5em 0;
+  border: 0.1em double #e0e0e0;
+  border-radius: 1em;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home .intro img {
+  border-radius: 1em;
 }
 .home .intro h2 {
   padding: 15px;
@@ -255,6 +260,24 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+  font-size: 1.6rem;
+  color: white;
+  background-color: #22283A;
+  text-align: center;
+  display: flex;
+  float: left;
+  border-radius: 5px;
+}
+.home .walk .walk-text .btn:hover,
+.home .walk .walk-text .btn:focus {
+  color: #22283A;
+  background-color: white;
 }
 .home .walk .walk-img {
   width: 46%;

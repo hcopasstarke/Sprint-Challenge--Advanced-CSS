@@ -1,13 +1,14 @@
 // Home Content
+@phone: ~"(max-width: 500px)";
 
-.container {
-  max-width: 800px;
-  width: 100%;
-  margin: 0 auto;  
-  
+
 .home {
 
   .intro {
+
+    img {
+      border-radius: 1em;
+    }
 
     h2 {
       padding: 15px;
@@ -63,10 +64,20 @@
       }
 
       .btn {
-
+        .button-padding (10px, 20px);
+        font-size: 1.6rem;
+        color: white;
+        background-color:  #22283A;
+        text-align: center;
+        display: flex;
+        float: left;
+        border-radius: 5px;
+        &:hover, &:focus {
+          .inverted (#22283A, white);
+        }
       }
     }
-
+  
     .walk-img {
       width: 46%;
       margin-left: 4%;

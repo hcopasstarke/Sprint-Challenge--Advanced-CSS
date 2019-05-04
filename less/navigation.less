@@ -3,49 +3,48 @@
 @nav-bg: @wild-sand;
 @nav-font: @river-bend;
 @nav-border: @sea-shell;
+@phone: ~"(max-width: 500px)";
 
-.container {
-    max-width: 800px;
+
+.container-home {
     width: 100%;
-    margin: 0 auto;  
+    margin-top: 1.5em;
+    padding: .5em;
+    display: inline-block;
+    background-color: @nav-bg;
+    border: 0.1em double @nav-border;
+
     .nav-container {
-        width: 100%;
-        margin-top: 20px;
-        display: inline-block;
-        width: 100%;
-        background-color: @nav-bg;
-        border: @nav-border;
-        border-width: 1px;
-    }
-    .navbar-header {
-        width: 100%;
-        margin: 0 auto;
-    }
-    ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        text-align: center;
+        .auto-container (100%, 0 auto);
+        
+        .nav-title h2 {
+            .auto-container (100%, 0 auto);
+            .flex (flex, row);
+            padding: .5em;
+            justify-content: space-evenly;
+            text-align: center;
         }
-        h2 {
-            display: inline-block;
-        }
-        .nav-bar {
-            width: 100%;
-            margin: 0 auto;
-            ul {
-                display: flex;
-                flex-direction: row;
-                justify-content: space-evenly;
-                list-style: none;
-                padding: 0;
+    }
+    
+    .nav-bar {
+        .auto-container (100%, 0 auto);
+
+        ul {
+            .flex (flex, row);
+            text-align: center;
+            justify-content: center;
+            list-style: none;
+                
+            li a {
+                color: #22283B;
+                font-size: 1.6rem;
+                line-height: 1.4;
+                text-decoration: none;
                 text-align: center;
-                li a {
-                    display: inline;
-                    font-style: @nav-font;
-                    text-decoration: none;
-                    text-align: center;
-                    }
+                display: inline;
+                padding: 1em;
+                &:hover, &:focus {
+                    .inverted (@nav-bg, #22283B);
                 }
             }
         }
