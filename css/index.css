@@ -160,42 +160,49 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+.home {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
 .home .nav-container {
+  margin-top: 20px;
+  display: inline-block;
+  width: 100%;
   background-color: #F6F6F6;
   border: #F1F1F1;
-  display: inline-block;
-  width: 50%;
-  border-width: 0;
+  border-width: 1px;
 }
 .home .navbar-header {
-  width: 50%;
+  width: 100%;
   margin: 0 auto;
 }
-.home .navbar-header ul {
+.home ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   text-align: center;
 }
-.home .navbar-header h2 {
+.home h2 {
   display: inline-block;
 }
-.home .navbar-header .nav-bar {
-  width: 50%;
+.home .nav-bar {
+  width: 100%;
   margin: 0 auto;
 }
-.home .navbar-header .nav-bar ul {
-  list-style-type: none;
-  margin: 0;
+.home .nav-bar ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  list-style: none;
   padding: 0;
   text-align: center;
 }
-.home .navbar-header .nav-bar li {
+.home .nav-bar ul li a {
   display: inline;
-}
-.home .navbar-header .nav-bar li a {
+  font-style: #454A59;
   text-decoration: none;
-  display: inline-block;
+  text-align: center;
 }
 footer {
   color: #22283B;
