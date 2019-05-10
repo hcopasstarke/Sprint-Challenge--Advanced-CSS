@@ -1,1 +1,38 @@
 // Mixins Here
+
+.btn-padding (@vert, @hor) {
+    padding-top: @vert;
+    padding-bottom: @vert;
+    padding-left: @hor;
+    padding-right: @hor;
+}
+
+.auto-container (@wid, @mar) {
+    width: @wid;
+    margin: @mar;
+}
+
+.flex (@dis, @fdir) {
+    display: @dis;
+    flex-direction: @fdir;
+}
+
+.inverted (@col, @bg-col) {
+    color: @col;
+    background-color: @bg-col;
+}
+
+@-webkit-keyframes flash {
+    0%, 50%, 100% {opacity: 1;}
+    25%, 75% {opacity: 0;}
+}
+
+@keyframes flash {
+    0%, 50%, 100% {opacity: 1;}
+    25%, 75% {opacity: 0;}   
+}
+
+.flash {
+    -webkit-animation-name: flash;
+    animation-name: flash;
+}
