@@ -164,19 +164,22 @@ p {
   width: 100%;
   margin: 0 auto;
   background-color: #F6F6F6;
+  border-bottom: 1px solid #F1F1F1;
 }
 .nav-container .nav-title h2 {
   width: 100%;
   margin: 0 auto;
   display: flex;
   flex-direction: row;
-  padding: 0.5em;
+  padding: 0.3em;
   justify-content: space-evenly;
   text-align: center;
 }
 .navbar {
   width: 100%;
   margin: 0 auto;
+  padding-top: 0.3em;
+  padding-bottom: 0.8em;
 }
 .navbar ul {
   display: flex;
@@ -187,11 +190,11 @@ p {
 }
 .navbar ul li a {
   color: #454A59;
-  font-size: 1.6rem;
+  font-size: 1.6em;
   text-decoration: none;
   text-align: center;
   display: inline;
-  padding: 1rem;
+  padding: 0.5em;
 }
 footer {
   color: #22283B;
@@ -205,6 +208,11 @@ footer {
 }
 .home {
   width: 85%;
+}
+.home .intro img {
+  width: 100%;
+  margin: 0;
+  border-radius: 0.8em;
 }
 .home .intro h2 {
   padding: 15px;
@@ -249,7 +257,11 @@ footer {
   margin-bottom: 26px;
 }
 .home .walk .walk-text .btn {
-  font-size: 1.6rem;
+  padding-right: 1em;
+  padding-left: 1em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  font-size: 1.6em;
   color: #F6F7F8;
   text-align: center;
   background-color: #22283A;
