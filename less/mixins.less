@@ -22,15 +22,17 @@
     background-color: @bg-col;
 }
 
-.keyframes (@name; @arguments) {
-    @-moz-keyframes @name { @arguments (); }
-    @-webkit-keyframes @name {
-        @arguments(); }
-        @keyframes @name { @arguments(); }
-    }
+@-webkit-keyframes flash {
+    0%, 50%, 100% {opacity: 1;}
+    25%, 75% {opacity: 0;}
+}
 
-    .animation(@arguments) {
-        -webkit-animation: @arguments;
-        -moz-animation: @arguments;
-        animation: @arguments;
-    }
+@keyframes flash {
+    0%, 50%, 100% {opacity: 1;}
+    25%, 75% {opacity: 0;}   
+}
+
+.flash {
+    -webkit-animation-name: flash;
+    animation-name: flash;
+}

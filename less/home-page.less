@@ -135,12 +135,18 @@
         border-radius: 5px;
         &:hover, &:focus {
           .inverted (#22283A, #F6F7F8);
-        }
+          
+          @media @phone {
+            .auto-container (100%, 0 auto);
+            padding-top: 1em;
+            padding-bottom: 1em;
+          }
 
-        @media @phone {
-          .auto-container (100%, 0 auto);
-          padding-top: 1em;
-          padding-bottom: 1em;
+        .flash {
+          -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+          -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
         }
       }
     }
