@@ -1,1 +1,41 @@
 // Navigation code here
+
+.nav-container {
+    width: 100%;
+    margin: 0 auto;
+
+    .nav-title h2 {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        padding: .5em;
+        justify-content: space-evenly;
+        text-align: center;
+    }
+}
+
+.navbar {
+    width: 100%;
+    margin: 0 auto;
+    
+    ul {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        justify-content: center;
+        list-style-type: none;
+
+        li a {
+            color: @nav-font;
+            font-size: 1.6rem;
+            text-decoration: none;
+            text-align: center;
+            display: inline;
+            padding: 1em;
+            &:hover, &:focus {
+                .inverted (@nav-bg, @btn-bg-color)
+            }
+        }
+    }
+}
