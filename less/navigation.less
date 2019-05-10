@@ -1,8 +1,12 @@
 // Navigation code here
+@nav-bg: @wild-sand;
+@nav-font: @river-bend;
+@nav-border: @sea-shell;
 
 .nav-container {
     width: 100%;
     margin: 0 auto;
+    background-color: @nav-bg;
 
     .nav-title h2 {
         width: 100%;
@@ -32,10 +36,7 @@
             text-decoration: none;
             text-align: center;
             display: inline;
-            padding: 1em;
-            &:hover, &:focus {
-                .inverted (@nav-bg, @btn-bg-color)
-            }
-        }
+            padding: 1rem;
+         }
     }
 }
