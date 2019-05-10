@@ -72,6 +72,10 @@
   .visit-planets {
     padding: 15px;
 
+    @media (@phone) {
+      padding: 2%;
+    }
+
     h3 {
       margin-top: 11px;
     }
@@ -90,10 +94,10 @@
 
     @media (max-width: 500px) {
       width: 100%;
-      margin-top: 20px;
+      margin-top: 0;
       padding: 10px 10px;
       display: flex;
-      flex-flow: wrap-reverse;
+      justify-content: center;
     }
 
     .walk-text {
@@ -139,8 +143,6 @@
       @media (@phone) {
         width: 100%;
         margin-left: 1%;
-        height: auto;
-        margin-left: 1%;
       }
       
       img {
@@ -149,8 +151,9 @@
         border-radius: 10px;
 
         @media (@phone) {
-          width: auto;
-          height: 100%;
+          width: 90%;
+          height: auto;
+          margin: 0 auto;
         }
       }
     }
