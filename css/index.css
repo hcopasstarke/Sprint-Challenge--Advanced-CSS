@@ -205,6 +205,25 @@ p {
   background-color: #22283B;
   border-radius: 0.2em;
 }
+@-moz-keyframes fade-in {
+  @arguments ();
+}
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
